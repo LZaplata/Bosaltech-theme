@@ -1,0 +1,95 @@
+<div class="container-fluid px-0" id="contact">
+    <div class="row row-cols-1 g-0 row-cols-md-2">
+        <div class="col left p-lg-5">
+            <div class="py-5 px-4 px-sm-5 d-md-flex flex-md-column h-100">
+                <div>
+                    <p class="h1 text-white mb-4 mb-md-5">
+                        {{ "contact.heading"|_ }}
+                    </p>
+                </div>
+
+                <div class="mt-lg-auto">
+                    <p class="d-flex align-items-center mb-2 mb-lg-4">
+                        <i class="bi bi-telephone fs-25 text-secondary me-3"></i>
+
+                        <a href="tel:+420 774 750 533" class="text-white text-secondary-hover transition-base fs-20">
+                            +420 774 750 533
+                        </a>
+                    </p>
+
+                    <p class="d-flex align-items-center mb-2 mb-lg-4">
+                        <i class="bi bi-envelope fs-25 text-secondary me-3"></i>
+
+                        <a href="mailto:jan.kutak@bosaltech.cz" class="text-white text-secondary-hover transition-base fs-20">
+                            jan.kutak@bosaltech.cz
+                        </a>
+                    </p>
+
+                    <p class="d-flex align-items-start mb-2 text-white fs-20 mb-4 mb-md-5">
+                        <i class="bi bi-pin-map fs-25 text-secondary me-3"></i>
+
+                        Nádražní 189 <br>
+                        541 01 Trutnov <br>
+                        Czech Republic
+                    </p>
+                </div>
+
+                <div class="mt-lg-auto">
+                    <a href="{{ 'contact'|page }}" class="btn btn-outline-secondary arrow right">
+                        {{ "contact.button.all"|_ }}
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col right bg-gray p-lg-5">
+            <div class="py-5 px-4 px-sm-5">
+                {% component "contactform" %}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{#<div id="kontakt" class="container-fluid bg-secondary py-5">#}
+{#    <div id="contact-container" class="container-lg">#}
+{#        <div class="row">#}
+{#            <div class="col-lg-7 col-xl-6">#}
+{#                <h2 class="mb-4">Rezervace</h2>#}
+
+{#                {% component "contactform" %}#}
+{#            </div>#}
+
+{#            <div class="col-lg-5 col-xl-4 offset-xl-2 mt-5 mt-lg-3">#}
+{#                <p class="mb-4 fs-20 address">#}
+{#                    <img src="{{ 'assets/images/logo-contact.svg'|theme }}" alt="logo" class="img-fluid mb-2"><br>#}
+
+{#                    Lisabonská 799/8 <br>#}
+{#                    190 00 Praha 9#}
+{#                </p>#}
+
+{#                <p class="mb-5 fs-20">#}
+{#                    <span class="d-flex align-items-center">#}
+{#                        <i class="bi bi-telephone fs-25 me-3 text-brown-light"></i>#}
+
+{#                        <a href="tel:+420 777 123 456" class="link-primary text-decoration-none text-orange-hover transition-base">#}
+{#                            +420 777 123 456#}
+{#                        </a>#}
+{#                    </span>#}
+
+{#                    <span class="d-flex align-items-center">#}
+{#                        <i class="bi bi-envelope fs-25 me-3 text-brown-light"></i>#}
+
+{#                        <a href="mailto:rezervace@villa-belvedere.cz" class="link-primary text-decoration-none text-orange-hover transition-base">#}
+{#                            rezervace@villa-belvedere.cz#}
+{#                        </a>#}
+{#                    </span>#}
+{#                </p>#}
+
+{#                <div class="ratio ratio-4x3">#}
+{#                    <iframe style="border:none" src="https://en.frame.mapy.cz/s/jocepafobe" width="400" height="280" frameborder="0"></iframe>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}

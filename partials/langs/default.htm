@@ -1,0 +1,11 @@
+<ul class="nav flex-column">
+    {% for code, name in locales %}
+        {% if code != activeLocale %}
+            <li class="nav-item">
+                <a href="" data-request="onSwitchLocale" data-request-data="locale: '{{ code }}'" class="nav-link text-uppercase py-1">
+                    {{ name }}
+                </a>
+            </li>
+        {% endif %}
+    {% endfor %}
+</ul>

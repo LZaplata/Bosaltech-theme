@@ -1,0 +1,290 @@
+@import "variables"
+
+html
+    scroll-behavior: smooth
+
+header
+    #menu
+        .nav
+            .nav-item
+                .nav-link
+                    font-family: $font-family-argentum-semibold
+
+        .langs
+            & > .nav-item
+                & > .nav-link
+                    cursor: pointer
+
+                & > div
+                    max-height: 0
+                    transition: max-height .2s ease-in-out
+                    background: $white
+                    z-index: 10
+
+                &:hover
+                    & > div
+                        max-height: 91px
+
+.content
+    p
+        strong
+            font-family: $font-family-argentum-semibold
+
+.btn
+    &.arrow
+        display: inline-flex
+        align-items: center
+
+        &.right
+            &:after
+                content: "\F135"
+                position: relative
+                font-family: bootstrap-icons
+                font-size: $font-size-38
+                line-height: .7
+                margin-left: .5rem
+                width: 30px
+                transition: $transition-base
+
+.btn-outline-secondary
+    @include button-variant(transparent, $secondary, $white, $secondary, $secondary, $white, transparent, $secondary, $white)
+
+    &.arrow
+        &:after
+            color: $secondary
+
+        @media (any-hover: hover)
+            &:hover
+                &:after
+                    color: $white
+
+#about-us
+    .numbers
+        @include gradient-directional($primary, $secondary, 135deg)
+        max-width: 520px
+
+        &:after
+            content: ""
+            position: absolute
+            bottom: 0
+            right: 0
+            width: 30px
+            height: 30px
+            background: $white
+            transform: rotate(45deg) translateX(70%)
+
+            @include media-breakpoint-up(sm)
+                width: 45px
+                height: 45px
+
+            @include media-breakpoint-up(lg)
+                width: 30px
+                height: 30px
+
+            @include media-breakpoint-up(xl)
+                width: 45px
+                height: 45px
+
+        .number
+            .heading
+                &:before
+                    content: ""
+                    width: 60px
+                    height: 2px
+                    background: $body-color
+                    position: absolute
+                    top: 0
+                    left: 50%
+                    transform: translateX(-50%)
+
+#gallery
+    .middle
+        .gradient
+            @include gradient-directional($primary, $secondary, 135deg)
+            opacity: .9
+
+        .heading
+            font-size: rfs-fluid-value($font-size-34)
+
+            @include media-breakpoint-up(sm)
+                font-size: rfs-fluid-value($font-size-55)
+
+            @include media-breakpoint-up(md)
+                font-size: rfs-fluid-value($font-size-17)
+
+            @include media-breakpoint-up(lg)
+                font-size: rfs-fluid-value($font-size-25)
+
+            @include media-breakpoint-up(xl)
+                font-size: $font-size-32
+
+            @include media-breakpoint-up(xxl)
+                font-size: $font-size-34
+
+#contact
+    .left
+        @include gradient-directional($gray, $brown, 135deg)
+
+    .right
+        form
+            .input-group
+                .input-group-text
+                    padding-right: 0
+
+                .form-control
+                    padding-left: .5rem
+
+        #scf-contactform
+            form
+                &.was-validated
+                    .form-group
+                        &:before
+                            top: 14px
+
+                .form-group
+                    position: relative
+
+                    &.has-error
+                        display: flex
+                        flex-direction: column
+
+                        input
+                            order: 0
+
+                        small
+                            order: 10
+                            display: block
+
+                    input, textarea
+                        padding-left: $input-padding-x * 2.2
+
+                    &:before
+                        font-family: bootstrap-icons
+                        position: absolute
+                        font-size: $font-size-17
+                        top: 15px
+                        left: $input-padding-x + ($grid-gutter-width / 2)
+                        line-height: 1
+
+                    &.name
+                        &:before
+                            content: "\F4E1"
+
+                    &.email
+                        &:before
+                            content: "\F32F"
+
+                    &.phone
+                        &:before
+                            content: "\F5C1"
+
+                    &.text
+                        &:before
+                            content: "\F4CB"
+
+                button
+                    &:after
+                        animation: none
+                        border: none
+                        opacity: 1
+                        height: auto
+
+footer
+    .nav
+        li
+            a
+                color: $white
+                font-family: $font-family-argentum-semibold
+                padding: 0
+
+            & + li
+                margin-left: 2rem
+
+    .copyright
+        span
+            mask: url("../images/logo.svg")
+            -webkit-mask: url("../images/logo.svg")
+            width: 129px
+            height: 25px
+            mask-size: cover
+            display: block
+
+    .signature
+        span
+            mask: url("../images/signature.svg")
+            -webkit-mask: url("../images/signature.svg")
+            width: 85px
+            height: 25px
+            mask-size: cover
+            display: block
+
+#manufacturing
+    .equipment
+        .col
+            & > div
+                &:after
+                    content: ""
+                    position: absolute
+                    width: 40px
+                    height: 40px
+                    bottom: -2px
+                    right: -2px
+                    background: linear-gradient(135deg, $primary 0, $primary 50%, $white 51%, $white 100%)
+                    clip-path: polygon(calc(100% - 2px) 0, 100% 0, 100% 100%, 0 100%, 0 calc(100% - 2px))
+
+                .border-bottom
+                    border-color: transparentize($primary, .8) !important
+
+//#offcanvas
+    .offcanvas-body
+        .nav
+            li
+                a
+                    text-align: center
+                    font-size: $font-size-24 !important
+
+                    &:not(.contact)
+                        padding: map-get($spacers, 3) 0
+
+                        @media (any-hover: hover)
+                            &:before
+                                content: attr(data-hover)
+                                position: absolute
+                                top: map-get($spacers, 3)
+                                left: 0
+                                overflow: hidden
+                                padding-bottom: 7px
+                                max-width: 0
+                                border-bottom: 3px solid $secondary
+                                color: $secondary
+                                transition: .5s max-width ease
+                                white-space: nowrap
+
+                            &:hover
+                                &:before
+                                    max-width: 100%
+
+                    @media (any-hover: hover)
+                        &.contact
+                            background-position: right -45% !important
+
+                            &:hover
+                                background-position: right 30% !important
+
+        .socials
+            a
+                width: 35px
+                height: 35px
+                mask: url("../images/icons/facebook.svg")
+                -webkit-mask: url("../images/icons/facebook.svg")
+                mask-size: cover
+                -webkit-mask-size: cover
+
+                @media (any-hover: hover)
+                    background-image: url("../images/btn-secondary-bg.svg")
+                    background-repeat: no-repeat
+                    background-position: right -25%
+                    transition: background-position .5s ease
+
+                    &:hover
+                        background-position: right 8%

@@ -1,0 +1,17 @@
+[staticMenu menu-mobile]
+code = "main-menu"
+==
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel" data-bs-scroll="true" data-bs-backdrop="false">
+    <div class="offcanvas-header">
+        <h5 class="text-gray mb-0">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <div class="offcanvas-body">
+        {% component "menu-mobile" %}
+
+        <div class="mt-5">
+            {% component "langs-mobile" %}
+        </div>
+    </div>
+</div>

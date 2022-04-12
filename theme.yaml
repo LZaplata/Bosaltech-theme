@@ -1,0 +1,15 @@
+name: 'Bosaltech'
+description: 'Theme for family company owning both CNC milling machines and lathes for a serial production.'
+author: 'Lukáš Záplata'
+homepage: ''
+authorCode: LZaplata
+code: bosaltech
+parent: ''
+database: '0'
+require:
+    - rainlab.translate
+    - rainlab.pages
+    - janvince.smallcontactform
+    - lzaplata.extensions
+translate:
+    en: config/lang-en.yaml

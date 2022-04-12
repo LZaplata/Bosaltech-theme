@@ -1,0 +1,21 @@
+<div class="container-fluid px-0" id="gallery">
+    <div class="row row-cols-1 g-0 row-cols-md-3">
+        <div class="col d-none d-md-block">
+            <img src="{{ 'assets/images/gallery/01.jpg'|theme }}" alt="01" class="img-fluid">
+        </div>
+
+        <div class="col middle position-relative">
+            <img src="{{ 'assets/images/gallery/02.jpg'|theme }}" alt="02" class="img-fluid">
+
+            <div class="position-absolute d-flex w-100 h-100 top-0 start-0 gradient"></div>
+
+            <div class="text-white position-absolute top-50 start-50 ff-argentum-bold w-100 text-center translate-middle heading">
+                {{ "gallery.heading"|_ }}
+            </div>
+        </div>
+
+        <div class="col d-none d-md-block">
+            <img src="{{ 'assets/images/gallery/03.jpg'|theme }}" alt="03" class="img-fluid">
+        </div>
+    </div>
+</div>

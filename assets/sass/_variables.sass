@@ -1,0 +1,119 @@
+@import "fonts"
+@import "bootstrap/scss/vendor/rfs"
+
+/***** override bootstrap variables *****/
+
+$enable-negative-margins:           true
+
+$font-family-argentum-light:        "Argentum Sans Light", sans-serif
+$font-family-argentum-regular:      "Argentum Sans Regular", sans-serif
+$font-family-argentum-semibold:     "Argentum Sans SemiBold", sans-serif
+$font-family-argentum-bold:         "Argentum Sans Bold", sans-serif
+$font-family-argentum-extrabold:    "Argentum Sans ExtraBold", sans-serif
+
+$font-size-13:                      0.8125rem
+$font-size-14:                      0.875rem
+$font-size-17:                      1.0625rem
+$font-size-19:                      1.1875rem
+$font-size-20:                      1.25rem
+$font-size-25:                      1.5625rem
+$font-size-32:                      2rem
+$font-size-34:                      2.125rem
+$font-size-38:                      2.375rem
+$font-size-55:                      3.4375rem
+$font-size-base:                    $font-size-17
+
+$primary:                           #ec3333
+$secondary:                         #f17920
+$gray-dark:                         #353539
+$gray:                              #404044
+$white:                             #ffffff
+$brown:                             #604a3e
+
+$font-family-base:                  $font-family-argentum-light
+$font-weight-base:                  normal
+
+$body-color:                        $gray
+
+$headings-font-family:              $font-family-argentum-bold
+$headings-font-weight:              normal
+$headings-color:                    $primary
+
+$h1-font-size:                      $font-size-38
+$h2-font-size:                      $font-size-19
+
+$link-decoration:                   none
+
+$nav-link-font-size:                $font-size-13
+$nav-link-color:                    $body-color
+$nav-link-hover-color:              $secondary
+$nav-pills-link-active-color:       $primary
+$nav-pills-link-active-bg:          transparent
+
+$offcanvas-bg-color:                $gray
+$offcanvas-color:                   $white
+
+$btn-close-color:                   $white
+$btn-close-focus-shadow:            none
+$btn-font-family:                   $font-family-argentum-extrabold
+$btn-font-weight:                   normal
+$btn-font-size:                     $font-size-20
+$btn-border-radius:                 3rem
+$btn-border-width:                  2px
+$btn-padding-y:                     .5rem
+$btn-padding-x:                     2.5rem
+$btn-focus-width:                   0
+//$btn-font-size-lg:                  $font-size-24
+//$btn-padding-y-lg:                  .9rem
+//$btn-padding-x-lg:                  3.5rem
+//$btn-border-radius-lg:              4rem
+//
+//$line-height-sm:                    1.2
+
+//$card-border-radius:                1.5rem
+//$card-bg:                           $secondary
+//$card-border-width:                 0
+//$card-color:                        $primary
+//$card-spacer-x:                     1.5rem
+//$card-spacer-y:                     1rem
+//
+//$input-placeholder-color:           $primary
+$input-font-size:                   $font-size-17
+$input-border-color:                $white
+$input-border-radius:               2rem
+$input-padding-x:                   1.3rem
+$input-padding-y:                   .6rem
+$input-focus-border-color:          $white
+$input-focus-box-shadow:            none
+$input-group-addon-bg:              $white
+$input-group-addon-color:           $body-color
+
+@import "bootstrap/scss/functions"
+@import "bootstrap/scss/variables"
+
+/***** add new theme colors *****/
+
+$custom-colors:                     ("gray": $gray, "body": $body-color, "white": $white, "secondary": $secondary, "gray-dark": $gray-dark)
+$theme-colors:                      map-merge($theme-colors, $custom-colors)
+$theme-colors-rgb:                  map-loop($theme-colors, to-rgb, "$value")
+$utilities-colors:                  map-merge($utilities-colors, $custom-colors)
+$utilities-text-colors:             map-loop($utilities-colors, rgba-css-var, "$key", "text")
+$utilities-bg-colors:               map-loop($utilities-colors, rgba-css-var, "$key", "bg")
+
+@import "bootstrap/scss/utilities"
+
+/***** add new utilities *****/
+
+$utilities:                         map-merge($utilities, ("font-size": map-merge(map-get($utilities, "font-size"), (values: map-merge(map-get(map-get($utilities, "font-size"), "values"), (14: $font-size-14, 17: $font-size-17, 20: $font-size-20, 25: $font-size-25, 32: $font-size-32, 34: $font-size-34, 55: $font-size-55))))))
+$utilities:                         map-merge($utilities, ("font-family": (property: font-family, class: ff, values: ("argentum-light": $font-family-argentum-light, "argentum-regular": $font-family-argentum-regular, "argentum-semibold": $font-family-argentum-semibold, "argentum-bold": $font-family-argentum-bold))))
+$utilities:                         map-merge($utilities, ("color-hover": (property: color, class: text, values: ("secondary": $secondary, "white": $white), state: hover)))
+//////$utilities:                         map-merge($utilities, ("border-hover": (property: border-color, class: border, values: ("secondary": $secondary), state: hover)))
+$utilities:                         map-merge($utilities, ("bg-hover": (property: background-color, class: bg, values: ("secondary": $secondary), state: hover)))
+$utilities:                         map-merge($utilities, ("transition": (property: transition, class: transition, values: ("base": $transition-base))))
+//$utilities:                         map-merge($utilities, ("width": map-merge(map-get($utilities, "width"), (responsive: true))))
+//$utilities:                         map-merge($utilities, ("position": map-merge(map-get($utilities, "position"), (responsive: true))))
+$utilities:                         map-merge($utilities, ("border-top": map-merge(map-get($utilities, "border-top"), (responsive: true))))
+$utilities:                         map-merge($utilities, ("border-width": map-merge(map-get($utilities, "border-width"), (responsive: true))))
+$utilities:                         map-merge($utilities, ("border-color": map-merge(map-get($utilities, "border-color"), (responsive: true))))
+
+@import "bootstrap/scss/bootstrap"

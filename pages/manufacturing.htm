@@ -1,0 +1,51 @@
+url = "/manufacturing"
+layout = "default"
+title = "Manufacturing"
+
+[viewBag]
+localeUrl[de] = "/maschinenausrustung"
+localeUrl[fr] = "/production"
+localeTitle[de] = "Maschinenausrüstung"
+localeTitle[fr] = "Production"
+localeDescription[de] = "Maschinenausrüstung"
+localeDescription[fr] = "Production"
+localeMeta_title[fr] = "Production"
+localeMeta_description[fr] = "Production"
+==
+<div class="container-fluid py-3 py-xl-5 mt-xl-5" id="manufacturing">
+    <div class="container-lg">
+        <div>
+            <h2 class="mb-4 mb-xl-5 fs-32">
+                <span class="ff-argentum-light">Machinery equipment |</span> Turning
+            </h2>
+
+            {% partial "manufacturing/turning" %}
+        </div>
+
+        <div class="mt-5 pt-xl-5">
+            <h2 class="mb-4 mb-xl-5 fs-32">
+                <span class="ff-argentum-light">Machinery equipment |</span> Milling
+            </h2>
+
+            {% partial "manufacturing/milling" %}
+        </div>
+
+        <div class="mt-5 pt-xl-5">
+            <h2 class="mb-4 mb-xl-5 fs-32">
+                <span class="ff-argentum-light">Machinery equipment |</span> Measurement
+            </h2>
+
+            {% partial "manufacturing/measurement" %}
+        </div>
+
+        <div class="mt-5 pt-xl-5 mb-5">
+            <h2 class="mb-4 mb-xl-5 fs-32">
+                <span class="ff-argentum-light">Other machinery equipment</span>
+            </h2>
+
+            <p class="mb-0">
+                Stanzen, Blechverarbeiten, Schweissen, Portalfrässen
+            </p>
+        </div>
+    </div>
+</div>

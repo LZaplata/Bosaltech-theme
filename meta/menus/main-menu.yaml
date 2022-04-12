@@ -1,0 +1,113 @@
+items:
+    -
+        title: Manufacturing
+        nesting: null
+        type: cms-page
+        url: null
+        code: ''
+        reference: manufacturing
+        cmsPage: null
+        replace: null
+        viewBag:
+            locale:
+                de:
+                    title: Maschinenausrüstung
+                    url: ''
+                fr:
+                    title: Production
+                    url: ''
+                cs:
+                    title: ''
+                    url: ''
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Surface finishing'
+        nesting: null
+        type: cms-page
+        url: null
+        code: ''
+        reference: surface-finishing
+        cmsPage: null
+        replace: null
+        viewBag:
+            locale:
+                de:
+                    title: 'Oberflächen - Metallveredelung'
+                    url: ''
+                fr:
+                    title: 'Traitement de surface variée'
+                    url: ''
+                cs:
+                    title: ''
+                    url: ''
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Services
+        nesting: null
+        type: cms-page
+        url: null
+        code: ''
+        reference: services
+        cmsPage: null
+        replace: null
+        viewBag:
+            locale:
+                de:
+                    title: 'Weitere Leistunge'
+                    url: ''
+                fr:
+                    title: 'Autres procédés de production'
+                    url: ''
+                cs:
+                    title: ''
+                    url: ''
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Products + references'
+        nesting: null
+        type: cms-page
+        url: null
+        code: ''
+        reference: products-references
+        cmsPage: null
+        replace: null
+        viewBag:
+            locale:
+                de:
+                    title: 'Unsere Leistung - Produkte'
+                    url: ''
+                fr:
+                    title: 'Objets de références'
+                    url: ''
+                cs:
+                    title: ''
+                    url: ''
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Contact
+        type: cms-page
+        code: ''
+        reference: contact
+        viewBag:
+            locale:
+                de:
+                    title: Kontakt
+                    url: ''
+                fr:
+                    title: Contactez-nous
+                    url: ''
+                cs:
+                    title: ''
+                    url: ''
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+name: 'Main menu'

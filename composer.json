@@ -1,0 +1,8 @@
+{
+    "name": "lzaplata/bosaltech-theme",
+    "type": "october-theme",
+    "description": "Theme for family company owning both CNC milling machines and lathes for a serial production.",
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}
