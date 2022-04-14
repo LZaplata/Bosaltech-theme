@@ -62,28 +62,16 @@ header
     .numbers
         @include gradient-directional($primary, $secondary, 135deg)
         max-width: 520px
+        clip-path: polygon(100% 0, 100% calc(100% - 25px), calc(100% - 25px) 100%, 0 100%, 0 0)
 
-        &:after
-            content: ""
-            position: absolute
-            bottom: 0
-            right: 0
-            width: 30px
-            height: 30px
-            background: $white
-            transform: rotate(45deg) translateX(70%)
+        @include media-breakpoint-up(sm)
+            clip-path: polygon(100% 0, 100% calc(100% - 35px), calc(100% - 35px) 100%, 0 100%, 0 0)
 
-            @include media-breakpoint-up(sm)
-                width: 45px
-                height: 45px
+        @include media-breakpoint-up(lg)
+            clip-path: polygon(100% 0, 100% calc(100% - 25px), calc(100% - 25px) 100%, 0 100%, 0 0)
 
-            @include media-breakpoint-up(lg)
-                width: 30px
-                height: 30px
-
-            @include media-breakpoint-up(xl)
-                width: 45px
-                height: 45px
+        @include media-breakpoint-up(xl)
+            clip-path: polygon(100% 0, 100% calc(100% - 35px), calc(100% - 35px) 100%, 0 100%, 0 0)
 
         .number
             .heading
@@ -134,60 +122,60 @@ header
                 .form-control
                     padding-left: .5rem
 
-        #scf-contactform
-            form
-                &.was-validated
-                    .form-group
-                        &:before
-                            top: 14px
+#scf-contactform
+    form
+        &.was-validated
+            .form-group
+                &:before
+                    top: 14px
 
-                .form-group
-                    position: relative
+        .form-group
+            position: relative
 
-                    &.has-error
-                        display: flex
-                        flex-direction: column
+            &.has-error
+                display: flex
+                flex-direction: column
 
-                        input
-                            order: 0
+                input
+                    order: 0
 
-                        small
-                            order: 10
-                            display: block
+                small
+                    order: 10
+                    display: block
 
-                    input, textarea
-                        padding-left: $input-padding-x * 2.2
+            input, textarea
+                padding-left: $input-padding-x * 2.2
 
-                    &:before
-                        font-family: bootstrap-icons
-                        position: absolute
-                        font-size: $font-size-17
-                        top: 15px
-                        left: $input-padding-x + ($grid-gutter-width / 2)
-                        line-height: 1
+            &:before
+                font-family: bootstrap-icons
+                position: absolute
+                font-size: $font-size-17
+                top: 15px
+                left: $input-padding-x + ($grid-gutter-width / 2)
+                line-height: 1
 
-                    &.name
-                        &:before
-                            content: "\F4E1"
+            &.name
+                &:before
+                    content: "\F4E1"
 
-                    &.email
-                        &:before
-                            content: "\F32F"
+            &.email
+                &:before
+                    content: "\F32F"
 
-                    &.phone
-                        &:before
-                            content: "\F5C1"
+            &.phone
+                &:before
+                    content: "\F5C1"
 
-                    &.text
-                        &:before
-                            content: "\F4CB"
+            &.text
+                &:before
+                    content: "\F4CB"
 
-                button
-                    &:after
-                        animation: none
-                        border: none
-                        opacity: 1
-                        height: auto
+        button
+            &:after
+                animation: none
+                border: none
+                opacity: 1
+                height: auto
 
 footer
     .nav
@@ -235,56 +223,27 @@ footer
                 .border-bottom
                     border-color: transparentize($primary, .8) !important
 
-//#offcanvas
-    .offcanvas-body
-        .nav
-            li
-                a
-                    text-align: center
-                    font-size: $font-size-24 !important
+#contact-page
+    .line-before
+        &:before
+            content: ""
+            width: 50px
+            height: 2px
+            position: absolute
+            top: 0
+            left: 0
+            background: $primary
 
-                    &:not(.contact)
-                        padding: map-get($spacers, 3) 0
+    .contact-card
+        @include gradient-directional($primary, $secondary, 135deg)
+        clip-path: polygon(100% 0, 100% calc(100% - 25px), calc(100% - 25px) 100%, 0 100%, 0 0)
 
-                        @media (any-hover: hover)
-                            &:before
-                                content: attr(data-hover)
-                                position: absolute
-                                top: map-get($spacers, 3)
-                                left: 0
-                                overflow: hidden
-                                padding-bottom: 7px
-                                max-width: 0
-                                border-bottom: 3px solid $secondary
-                                color: $secondary
-                                transition: .5s max-width ease
-                                white-space: nowrap
+        @include media-breakpoint-only(md)
+            max-width: 500px
 
-                            &:hover
-                                &:before
-                                    max-width: 100%
+        @include media-breakpoint-up(sm)
+            clip-path: polygon(100% 0, 100% calc(100% - 35px), calc(100% - 35px) 100%, 0 100%, 0 0)
 
-                    @media (any-hover: hover)
-                        &.contact
-                            background-position: right -45% !important
-
-                            &:hover
-                                background-position: right 30% !important
-
-        .socials
-            a
-                width: 35px
-                height: 35px
-                mask: url("../images/icons/facebook.svg")
-                -webkit-mask: url("../images/icons/facebook.svg")
-                mask-size: cover
-                -webkit-mask-size: cover
-
-                @media (any-hover: hover)
-                    background-image: url("../images/btn-secondary-bg.svg")
-                    background-repeat: no-repeat
-                    background-position: right -25%
-                    transition: background-position .5s ease
-
-                    &:hover
-                        background-position: right 8%
+        &.quality
+            @include media-breakpoint-only(md)
+                max-width: 250px

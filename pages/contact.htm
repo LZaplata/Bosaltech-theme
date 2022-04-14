@@ -14,3 +14,87 @@ localeMeta_title[fr] = "Contactez-nous"
 localeMeta_description[de] = "Kontakt"
 localeMeta_description[fr] = "Contactez-nous"
 ==
+<div class="container-fluid bg-gray pb-5" id="contact-page">
+    <div class="container-lg">
+        <p class="mb-5">
+            <img src="{{ 'assets/images/contact/office.jpg'|theme }}" alt="office" class="img-fluid">
+        </p>
+
+        <h2 class="text-white fs-32 mb-4">
+            {{ "contact.page.contact-us"|_ }}
+        </h2>
+
+        <div class="row row-cols-1 row-cols-lg-2">
+            <div class="col pe-lg-4 pe-xl-5">
+                <div class="me-xxl-5">
+                    {% partial "contact/cards" %}
+                </div>
+            </div>
+
+            <div class="col text-white mt-5 mt-lg-0 ps-lg-4 ps-xl-5">
+                <h3 class="fs-25 text-white mb-3">
+                    BOSALTECH s.r.o.
+                </h3>
+
+                <p class="mb-0">
+                    Nádražní 189 <br>
+                    541 01 Trutnov <br>
+                    Czech Republic
+                </p>
+
+                <p class="line-before position-relative mt-3 pt-3">
+                    <span class="ff-argentum-bold">USt. IDNr. / VAT:</span> CZ03297250 <br>
+                    <span class="ff-argentum-bold">EORI Nr.:</span> CZ03297250 <br>
+                    <span class="ff-argentum-bold">ID. Nr.:</span> 03297250
+                </p>
+
+                <p class="line-before position-relative mt-3 pt-3">
+                    <span class="ff-argentum-bold">IČ:</span> 03297250 <br>
+                    <span class="ff-argentum-bold">DIČ:</span> CZ03297250 <br>
+                    <span class="ff-argentum-bold">CEO:</span> Bc. Jan Kuťák <br>
+                    Registergericht in Hradec Kralove, Sec. C, File 33993
+                </p>
+
+                <p class="line-before position-relative mt-3 pt-3">
+                    <span class="ff-argentum-bold">Bankverbindung EURO:</span> Komerční banka Trutnov <br>
+                    <span class="ff-argentum-bold">IBAN:</span> CZ4901000001078353300267 <br>
+                    <span class="ff-argentum-bold">BIC / SWIFT:</span> KOMBCZPPXXX
+                </p>
+
+                <p class="line-before position-relative mt-3 pt-3">
+                    <span class="ff-argentum-bold">Bankverbindung CZK:</span> Komerční banka Trutnov <br>
+                    <span class="ff-argentum-bold">IBAN:</span> CZ3001000001078177140267 <br>
+                    <span class="ff-argentum-bold">BIC / SWIFT:</span> KOMBCZPPXXX
+                </p>
+
+                <p class="line-before position-relative mt-3 pt-3 mb-0">
+                    <span class="ff-argentum-bold">
+                        ISO 9001:2015
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <div class="mt-5 row row-cols-1 mb-3 row-cols-md-2 pt-md-5 mb-xl-5">
+            <div class="col pe-lg-4 pe-xl-5">
+                <div class="me-xxl-5">
+                    <h2 class="text-white fs-32 mb-4">
+                        {{ "contact.page.form.heading"|_ }}
+                    </h2>
+
+                    {% component "contactform" %}
+                </div>
+            </div>
+
+            <div class="col mt-5 mt-md-0 ps-lg-4 ps-xl-5">
+                <h2 class="text-white fs-32 mb-4">
+                    {{ "contact.page.map.heading"|_ }}
+                </h2>
+
+                <div class="ratio ratio-16x9">
+                    <iframe style="border:none" src="https://en.frame.mapy.cz/s/deramacego" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

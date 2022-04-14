@@ -106,11 +106,11 @@ $utilities-bg-colors:               map-loop($utilities-colors, rgba-css-var, "$
 
 $utilities:                         map-merge($utilities, ("font-size": map-merge(map-get($utilities, "font-size"), (values: map-merge(map-get(map-get($utilities, "font-size"), "values"), (14: $font-size-14, 17: $font-size-17, 20: $font-size-20, 25: $font-size-25, 32: $font-size-32, 34: $font-size-34, 55: $font-size-55))))))
 $utilities:                         map-merge($utilities, ("font-family": (property: font-family, class: ff, values: ("argentum-light": $font-family-argentum-light, "argentum-regular": $font-family-argentum-regular, "argentum-semibold": $font-family-argentum-semibold, "argentum-bold": $font-family-argentum-bold))))
-$utilities:                         map-merge($utilities, ("color-hover": (property: color, class: text, values: ("secondary": $secondary, "white": $white), state: hover)))
+$utilities:                         map-merge($utilities, ("color-hover": (property: color, class: text, values: ("secondary": $secondary, "white": $white, "gray-dark": $gray-dark), state: hover)))
 //////$utilities:                         map-merge($utilities, ("border-hover": (property: border-color, class: border, values: ("secondary": $secondary), state: hover)))
 $utilities:                         map-merge($utilities, ("bg-hover": (property: background-color, class: bg, values: ("secondary": $secondary), state: hover)))
 $utilities:                         map-merge($utilities, ("transition": (property: transition, class: transition, values: ("base": $transition-base))))
-//$utilities:                         map-merge($utilities, ("width": map-merge(map-get($utilities, "width"), (responsive: true))))
+$utilities:                         map-merge($utilities, ("width": map-merge(map-get($utilities, "width"), (responsive: true))))
 //$utilities:                         map-merge($utilities, ("position": map-merge(map-get($utilities, "position"), (responsive: true))))
 $utilities:                         map-merge($utilities, ("border-top": map-merge(map-get($utilities, "border-top"), (responsive: true))))
 $utilities:                         map-merge($utilities, ("border-width": map-merge(map-get($utilities, "border-width"), (responsive: true))))
