@@ -239,3 +239,29 @@ footer
         &.quality
             @include media-breakpoint-only(md)
                 max-width: 250px
+
+#surface-finishing
+    ul
+        padding-left: 0
+        position: relative
+        padding-top: map-get($spacers, 3)
+
+        &:before
+            content: ""
+            position: absolute
+            top: 0
+            left: 0
+            width: 280px
+            height: 2px
+            background: transparentize($primary, .8)
+
+            @include media-breakpoint-down(sm)
+                width: 100%
+
+        li
+            font-size: $font-size-14
+            list-style-type: none
+
+            &:before
+                content: "- "
+                position: relative
