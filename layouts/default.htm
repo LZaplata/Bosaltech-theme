@@ -39,7 +39,11 @@ default = 1
         {% partial "header" %}
 
         <main class="position-relative">
-            {% page %}
+            {% if not staticPage.content %}
+                {% page %}
+            {% else %}
+                {% component "staticPage" %}
+            {% endif %}
         </main>
 
         {% partial "footer" %}
