@@ -13,3 +13,6 @@ require:
     - lzaplata.extensions
 translate:
     en: config/lang-en.yaml
+    cs: config/lang-cs.yaml
+    de: config/lang-de.yaml
+    fr: config/lang-fr.yaml
