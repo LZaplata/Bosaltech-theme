@@ -58,6 +58,10 @@ header
                 &:after
                     color: $white
 
+#banner
+    .claim
+        @include gradient-directional(transparentize($primary, .3), transparentize($secondary, .3), 135deg)
+
 #about-us
     .numbers
         @include gradient-directional($primary, $secondary, 135deg)

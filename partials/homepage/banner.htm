@@ -1,0 +1,13 @@
+<div class="container-fluid px-0 d-flex position-relative" id="banner">
+    <video autoplay loop>
+        <source src="{{ 'assets/videos/banner.mp4'|theme }}">
+    </video>
+
+    <div class="claim position-absolute w-100 h-100 d-flex align-items-center">
+        <div class="container-lg">
+            <p class="fs-55 text-white mb-0 ff-argentum-regular text-center">
+                {% content "slides/01" %}
+            </p>
+        </div>
+    </div>
+</div>
