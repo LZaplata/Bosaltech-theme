@@ -11,13 +11,13 @@ items:
         viewBag:
             locale:
                 de:
-                    title: Maschinenausrüstung
+                    title: Herstellung
                     url: ''
                 fr:
-                    title: Production
+                    title: Fabrication
                     url: ''
                 cs:
-                    title: ''
+                    title: Výroba
                     url: ''
             isHidden: '0'
             cssClass: ''
@@ -34,13 +34,13 @@ items:
         viewBag:
             locale:
                 de:
-                    title: 'Oberflächen - Metallveredelung'
+                    title: OBERFLÄCHENBEARBEITUNG
                     url: ''
                 fr:
-                    title: 'Traitement de surface variée'
+                    title: 'FINITION DE SURFACE'
                     url: ''
                 cs:
-                    title: ''
+                    title: 'Povrchová úprava'
                     url: ''
             isHidden: '0'
             cssClass: ''
@@ -57,13 +57,13 @@ items:
         viewBag:
             locale:
                 de:
-                    title: 'Weitere Leistunge'
+                    title: Dienstleistungen
                     url: ''
                 fr:
-                    title: 'Autres procédés de production'
+                    title: 'Prestations de service '
                     url: ''
                 cs:
-                    title: ''
+                    title: Služby
                     url: ''
             isHidden: '0'
             cssClass: ''
@@ -80,32 +80,32 @@ items:
         viewBag:
             locale:
                 de:
-                    title: 'Unsere Leistung - Produkte'
+                    title: 'Produkte + Referenzen'
                     url: ''
                 fr:
-                    title: 'Objets de références'
+                    title: 'des produits + référence'
                     url: ''
                 cs:
-                    title: ''
+                    title: 'Výrobky + reference'
                     url: ''
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
     -
-        title: Contact
+        title: Contacts
         type: cms-page
         code: ''
-        reference: contact
+        reference: contacts
         viewBag:
             locale:
                 de:
-                    title: Kontakt
+                    title: Kontakte
                     url: ''
                 fr:
-                    title: Contactez-nous
+                    title: Contacts
                     url: ''
                 cs:
-                    title: ''
+                    title: Kontakty
                     url: ''
             isHidden: '0'
             cssClass: ''

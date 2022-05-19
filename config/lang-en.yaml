@@ -38,6 +38,10 @@ manufacturing.milling.machine.01.desc: "CNC Machining center - milling<br>Metal 
 manufacturing.milling.machine.02.desc: "CNC Machining center - milling<br>Precise and economical metal machining"
 manufacturing.milling.machine.03.desc: "CNC Machining center - milling<br>Precise and efficient metal machining"
 manufacturing.measurement.heading: "Measurement"
+manufacturing.measurement.machine.01.desc: "CNC measurement technology in air-conditioned measuring room"
+manufacturing.measurement.machine.01.text: "We check our workpieces on a Zeiss CONTURA 3D measuring device, including the possibility of delivering a measurement protocol."
+manufacturing.other.heading: "Other machinery equipment"
+manufacturing.other.text: "In cooperation with our partners, we can offer welding, pressing, punching, milling of large dimensions, production of sheet metal parts."
 
 surface-finishing.anodizing: "Anodizing"
 surface-finishing.nickeling: "Nickeling"
