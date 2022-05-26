@@ -24,13 +24,9 @@ items:
             isExternal: '0'
     -
         title: 'Surface finishing'
-        nesting: null
         type: cms-page
-        url: null
         code: ''
         reference: surface-finishing
-        cmsPage: null
-        replace: null
         viewBag:
             locale:
                 de:
@@ -40,7 +36,7 @@ items:
                     title: 'FINITION DE SURFACE'
                     url: ''
                 cs:
-                    title: 'Povrchová úprava'
+                    title: 'Povrchové úpravy'
                     url: ''
             isHidden: '0'
             cssClass: ''
@@ -93,9 +89,13 @@ items:
             isExternal: '0'
     -
         title: Contacts
+        nesting: null
         type: cms-page
+        url: null
         code: ''
         reference: contacts
+        cmsPage: null
+        replace: null
         viewBag:
             locale:
                 de:

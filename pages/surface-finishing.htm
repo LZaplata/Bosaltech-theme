@@ -3,16 +3,21 @@ layout = "default"
 title = "Surface finishing"
 
 [viewBag]
-localeUrl[de] = "/oberflachen-metallveredelung"
-localeUrl[fr] = "/traitement-de-surface-variee"
-localeTitle[de] = "Oberflächen - Metallveredelung"
-localeTitle[fr] = "Traitement de surface variée"
-localeDescription[de] = "Oberflächen - Metallveredelung"
-localeDescription[fr] = "Traitement de surface variée"
-localeMeta_title[de] = "Oberflächen - Metallveredelung"
-localeMeta_title[fr] = "Traitement de surface variée"
-localeMeta_description[de] = "Oberflächen - Metallveredelung"
-localeMeta_description[fr] = "Traitement de surface variée"
+localeUrl[de] = "/oberflachenbearbeitung"
+localeUrl[fr] = "/finition-de-surface"
+localeUrl[cs] = "/povrchove-upravy"
+localeTitle[de] = "Oberflächenbearbeitung"
+localeTitle[fr] = "Finition de surface"
+localeTitle[cs] = "Povrchové úpravy"
+localeDescription[de] = "Oberflächenbearbeitung"
+localeDescription[fr] = "Finition de surface"
+localeDescription[cs] = "Povrchové úpravy"
+localeMeta_title[de] = "Oberflächenbearbeitung"
+localeMeta_title[fr] = "Finition de surface"
+localeMeta_title[cs] = "Povrchové úpravy"
+localeMeta_description[de] = "Oberflächenbearbeitung"
+localeMeta_description[fr] = "Finition de surface"
+localeMeta_description[cs] = "Povrchové úpravy"
 ==
 <div class="container-fluid py-3 py-xl-5 mt-xl-5" id="surface-finishing">
     <div class="container-lg">
@@ -40,10 +45,10 @@ localeMeta_description[fr] = "Traitement de surface variée"
             <div class="col-12 col-lg-8 pe-xl-5">
                 <div class="pe-xxl-5">
                     <h3 class="mb-4 fs-32">
-                        {{ 'surface-finishing.nickeling'|_ }}
+                        {{ 'surface-finishing.nickel-plating'|_ }}
                     </h3>
 
-                    {% content "surface-finishing/nickeling" %}
+                    {% content "surface-finishing/nickel-plating" %}
                 </div>
             </div>
 
@@ -64,7 +69,7 @@ localeMeta_description[fr] = "Traitement de surface variée"
             </div>
 
             <div class="col-12 mt-4 col-lg-4 mt-lg-0">
-                <img src="{{ 'assets/images/surface-finishing/01.png'|theme }}" alt="" class="img-fluid">
+                <img src="{{ 'assets/images/surface-finishing/03.png'|theme }}" alt="" class="img-fluid">
             </div>
         </div>
 
@@ -72,10 +77,10 @@ localeMeta_description[fr] = "Traitement de surface variée"
             <div class="col-12 col-lg-8 pe-xl-5">
                 <div class="pe-xxl-5">
                     <h3 class="mb-4 fs-32">
-                        {{ 'surface-finishing.blackening'|_ }}
+                        {{ 'surface-finishing.bluing'|_ }}
                     </h3>
 
-                    {% content "surface-finishing/blackening" %}
+                    {% content "surface-finishing/bluing" %}
                 </div>
             </div>
 
@@ -88,26 +93,10 @@ localeMeta_description[fr] = "Traitement de surface variée"
             <div class="col-12 col-lg-8 pe-xl-5">
                 <div class="pe-xxl-5">
                     <h3 class="mb-4 fs-32">
-                        {{ 'surface-finishing.laser-cutting'|_ }}
+                        {{ 'surface-finishing.laser-description'|_ }}
                     </h3>
 
-                    {% content "surface-finishing/laser-cutting" %}
-                </div>
-            </div>
-
-            <div class="col-12 mt-4 col-lg-4 mt-lg-0">
-                <img src="{{ 'assets/images/surface-finishing/01.png'|theme }}" alt="" class="img-fluid">
-            </div>
-        </div>
-
-        <div class="mt-5 pt-xl-4 row">
-            <div class="col-12 col-lg-8 pe-xl-5">
-                <div class="pe-xxl-5">
-                    <h3 class="mb-4 fs-32">
-                        {{ 'surface-finishing.quenching'|_ }}
-                    </h3>
-
-                    {% content "surface-finishing/quenching" %}
+                    {% content "surface-finishing/laser-description" %}
                 </div>
             </div>
 
@@ -120,15 +109,15 @@ localeMeta_description[fr] = "Traitement de surface variée"
             <div class="col-12 col-lg-8 pe-xl-5">
                 <div class="pe-xxl-5">
                     <h3 class="mb-4 fs-32">
-                        {{ 'surface-finishing.painting'|_ }}
+                        {{ 'surface-finishing.nitrieren-hardening'|_ }}
                     </h3>
 
-                    {% content "surface-finishing/painting" %}
+                    {% content "surface-finishing/nitrieren-hardening" %}
                 </div>
             </div>
 
             <div class="col-12 mt-4 col-lg-4 mt-lg-0">
-                <img src="{{ 'assets/images/surface-finishing/01.png'|theme }}" alt="" class="img-fluid">
+                <img src="{{ 'assets/images/surface-finishing/06.png'|theme }}" alt="" class="img-fluid">
             </div>
         </div>
     </div>

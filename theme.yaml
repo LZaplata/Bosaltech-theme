@@ -7,7 +7,6 @@ code: bosaltech
 parent: ''
 database: '0'
 require:
-    - rainlab.translate
     - rainlab.pages
     - janvince.smallcontactform
     - lzaplata.extensions

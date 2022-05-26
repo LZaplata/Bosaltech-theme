@@ -3,16 +3,21 @@ layout = "default"
 title = "Contacts"
 
 [viewBag]
-localeUrl[de] = "/kontakt"
-localeUrl[fr] = "/contactez-nous"
-localeTitle[de] = "Kontakt"
-localeTitle[fr] = "Contactez-nous"
-localeDescription[de] = "Kontakt"
-localeDescription[fr] = "Contactez-nous"
-localeMeta_title[de] = "Kontakt"
-localeMeta_title[fr] = "Contactez-nous"
-localeMeta_description[de] = "Kontakt"
-localeMeta_description[fr] = "Contactez-nous"
+localeUrl[de] = "/kontakte"
+localeUrl[fr] = "/contacts"
+localeUrl[cs] = "/kontakty"
+localeTitle[de] = "Kontakte"
+localeTitle[fr] = "Contacts"
+localeTitle[cs] = "Kontakty"
+localeDescription[de] = "Kontakte"
+localeDescription[fr] = "Contacts"
+localeDescription[cs] = "Kontakty"
+localeMeta_title[de] = "Kontakte"
+localeMeta_title[fr] = "Contacts"
+localeMeta_title[cs] = "Kontakty"
+localeMeta_description[de] = "Kontakte"
+localeMeta_description[fr] = "Contacts"
+localeMeta_description[cs] = "Kontakty"
 ==
 <div class="container-fluid bg-gray pb-5" id="contact-page">
     <div class="container-lg">
@@ -21,7 +26,7 @@ localeMeta_description[fr] = "Contactez-nous"
         </p>
 
         <h2 class="text-white fs-32 mb-4">
-            {{ "contact.page.contact-us"|_ }}
+            {{ "contacts.contact-us"|_ }}
         </h2>
 
         <div class="row row-cols-1 row-cols-lg-2">
@@ -37,41 +42,41 @@ localeMeta_description[fr] = "Contactez-nous"
                 </h3>
 
                 <p class="mb-0">
-                    Nádražní 189 <br>
-                    541 01 Trutnov <br>
+                    Petříkovická 32, Poříčí <br>
+                    541 03 Trutnov <br>
                     Czech Republic
                 </p>
 
-                <p class="line-before position-relative mt-3 pt-3">
-                    <span class="ff-argentum-bold">USt. IDNr. / VAT:</span> CZ03297250 <br>
-                    <span class="ff-argentum-bold">EORI Nr.:</span> CZ03297250 <br>
-                    <span class="ff-argentum-bold">ID. Nr.:</span> 03297250
-                </p>
+{#                <p class="line-before position-relative mt-3 pt-3">#}
+{#                    <span class="ff-argentum-bold">USt. IDNr. / VAT:</span> CZ03297250 <br>#}
+{#                    <span class="ff-argentum-bold">EORI Nr.:</span> CZ03297250 <br>#}
+{#                    <span class="ff-argentum-bold">ID. Nr.:</span> 03297250#}
+{#                </p>#}
 
                 <p class="line-before position-relative mt-3 pt-3">
-                    <span class="ff-argentum-bold">IČ:</span> 03297250 <br>
-                    <span class="ff-argentum-bold">DIČ:</span> CZ03297250 <br>
+                    <span class="ff-argentum-bold">IČ:</span> 14178541 <br>
+                    <span class="ff-argentum-bold">DIČ:</span> CZ14178541 <br>
                     <span class="ff-argentum-bold">CEO:</span> Bc. Jan Kuťák <br>
-                    Registergericht in Hradec Králové, Sec. C, File 33993
+                    {{ "contacts.registered"|_ }}
                 </p>
 
                 <p class="line-before position-relative mt-3 pt-3">
-                    <span class="ff-argentum-bold">Bankverbindung EURO:</span> Komerční banka Trutnov <br>
-                    <span class="ff-argentum-bold">IBAN:</span> CZ4901000001078353300267 <br>
-                    <span class="ff-argentum-bold">BIC / SWIFT:</span> KOMBCZPPXXX
-                </p>
-
-                <p class="line-before position-relative mt-3 pt-3">
-                    <span class="ff-argentum-bold">Bankverbindung CZK:</span> Komerční banka Trutnov <br>
-                    <span class="ff-argentum-bold">IBAN:</span> CZ3001000001078177140267 <br>
-                    <span class="ff-argentum-bold">BIC / SWIFT:</span> KOMBCZPPXXX
+                    <span class="ff-argentum-bold">{{ "contacts.account-number"|_ }} EUR:</span> 123-6011860257/0100 <br>
+                    <span class="ff-argentum-bold">IBAN:</span> CZ9601000001236011860257 <br>
+                    <span class="ff-argentum-bold">BIC/SWIFT:</span> KOMBCZPPXXX
                 </p>
 
                 <p class="line-before position-relative mt-3 pt-3 mb-0">
-                    <span class="ff-argentum-bold">
-                        ISO 9001:2015
-                    </span>
+                    <span class="ff-argentum-bold">{{ "contacts.account-number"|_ }} CZK:</span> 123-7077890277/0100 <br>
+                    <span class="ff-argentum-bold">IBAN:</span> CZ4101000001237077890277 <br>
+                    <span class="ff-argentum-bold">BIC / SWIFT:</span> KOMBCZPPXXX
                 </p>
+
+{#                <p class="line-before position-relative mt-3 pt-3 mb-0">#}
+{#                    <span class="ff-argentum-bold">#}
+{#                        ISO 9001:2015#}
+{#                    </span>#}
+{#                </p>#}
             </div>
         </div>
 
@@ -79,7 +84,7 @@ localeMeta_description[fr] = "Contactez-nous"
             <div class="col pe-lg-4 pe-xl-5">
                 <div class="me-xxl-5">
                     <h2 class="text-white fs-32 mb-4">
-                        {{ "contact.page.form.heading"|_ }}
+                        {{ "contacts.form.heading"|_ }}
                     </h2>
 
                     {% component "contactform" %}
@@ -88,7 +93,7 @@ localeMeta_description[fr] = "Contactez-nous"
 
             <div class="col mt-5 mt-md-0 ps-lg-4 ps-xl-5">
                 <h2 class="text-white fs-32 mb-4">
-                    {{ "contact.page.map.heading"|_ }}
+                    {{ "contacts.map.heading"|_ }}
                 </h2>
 
                 <div class="ratio ratio-16x9">
