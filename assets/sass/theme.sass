@@ -215,7 +215,7 @@ footer
                 .border-bottom
                     border-color: transparentize($primary, .8) !important
 
-#contact-page
+#contacts
     .line-before
         &:before
             content: ""
@@ -226,7 +226,7 @@ footer
             left: 0
             background: $primary
 
-    .contact-card
+    .contacts-card
         @include gradient-directional($primary, $secondary, 135deg)
         clip-path: polygon(100% 0, 100% calc(100% - 25px), calc(100% - 25px) 100%, 0 100%, 0 0)
 
@@ -239,6 +239,23 @@ footer
         &.quality
             @include media-breakpoint-only(md)
                 max-width: 250px
+
+        &.kutakova
+            @include media-breakpoint-only(md)
+                width: 55% !important
+
+            .job
+                @include media-breakpoint-down(sm)
+                    line-height: 1
+                    margin-bottom: 5px !important
+
+                    span
+                        visibility: hidden
+
+                        &:after
+                            clear: both
+                            display: block
+                            content: ""
 
 #surface-finishing
     ul
