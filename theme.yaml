@@ -10,6 +10,7 @@ require:
     - rainlab.pages
     - janvince.smallcontactform
     - lzaplata.extensions
+    - lzaplata.gallery
 translate:
     en: config/lang-en.yaml
     cs: config/lang-cs.yaml
