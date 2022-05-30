@@ -61,11 +61,13 @@ header
 #about-us
     .numbers
         @include gradient-directional($primary, $secondary, 135deg)
-        max-width: 520px
         clip-path: polygon(100% 0, 100% calc(100% - 25px), calc(100% - 25px) 100%, 0 100%, 0 0)
 
         @include media-breakpoint-up(sm)
             clip-path: polygon(100% 0, 100% calc(100% - 35px), calc(100% - 35px) 100%, 0 100%, 0 0)
+
+        @include media-breakpoint-up(md)
+            max-width: 600px
 
         @include media-breakpoint-up(lg)
             clip-path: polygon(100% 0, 100% calc(100% - 25px), calc(100% - 25px) 100%, 0 100%, 0 0)
