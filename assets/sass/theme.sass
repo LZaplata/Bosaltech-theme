@@ -58,10 +58,6 @@ header
                 &:after
                     color: $white
 
-#banner
-    .claim
-        @include gradient-directional(transparentize($primary, .3), transparentize($secondary, .3), 135deg)
-
 #about-us
     .numbers
         @include gradient-directional($primary, $secondary, 135deg)
@@ -239,23 +235,6 @@ footer
         &.quality
             @include media-breakpoint-only(md)
                 max-width: 250px
-
-        //&.kutakova
-            @include media-breakpoint-only(md)
-                width: 55% !important
-
-            .job
-                @include media-breakpoint-down(sm)
-                    line-height: 1
-                    margin-bottom: 5px !important
-
-                    span
-                        visibility: hidden
-
-                        &:after
-                            clear: both
-                            display: block
-                            content: ""
 
 #surface-finishing
     ul
