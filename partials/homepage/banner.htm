@@ -1,13 +1,13 @@
 <div class="container-fluid px-0 d-flex position-relative" id="banner">
-    <video autoplay loop muted class="d-md-none">
+    <video autoplay loop muted class="d-md-none img-fluid">
         <source src="{{ 'assets/videos/banner-xs.mp4'|theme }}" type="video/mp4">
     </video>
 
-    <video autoplay loop muted class="d-none d-md-flex">
+    <video autoplay loop muted class="d-none d-md-flex img-fluid">
         <source src="{{ 'assets/videos/banner.mp4'|theme }}" type="video/mp4">
     </video>
 
-    <div class="claim position-absolute w-100 h-100 d-flex align-items-center">
+    <div class="claim position-absolute w-100 h-100 d-none d-sm-flex align-items-center">
         <div class="container-lg">
             <p class="fs-55 text-white mb-0 ff-argentum-regular text-center">
                 {{ "homepage.banner.claim"|_ }}
