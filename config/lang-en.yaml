@@ -45,3 +45,6 @@ surface-finishing.galvanizing: "Galvanizing"
 surface-finishing.bluing: "Bluing"
 surface-finishing.laser-description: "Laser description"
 surface-finishing.nitrieren-hardening: "Nitrieren hardening"
+
+services.service.01.heading: "Structural design, production, assembly. Cooperation in commissioning."
+services.service.02.heading: "Laser cutting, punching, sheet metal bending"

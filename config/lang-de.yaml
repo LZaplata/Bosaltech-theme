@@ -44,3 +44,6 @@ surface-finishing.galvanizing: "Galvanisieren"
 surface-finishing.bluing: "Brünieren"
 surface-finishing.laser-description: "Laserbeschreibung"
 surface-finishing.nitrieren-hardening: "Nitridace härten"
+
+services.service.01.heading: "Konstruktionsentwurf, Fertigung, Montage. Zusammenarbeit bei der Inbetriebnahme."
+services.service.02.heading: "Laserschneiden, Stanzen, Blechbiegen"

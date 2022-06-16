@@ -44,3 +44,6 @@ surface-finishing.galvanizing: "Zinkování"
 surface-finishing.bluing: "Brynýrování"
 surface-finishing.laser-description: "Popis laserem"
 surface-finishing.nitrieren-hardening: "Kalení"
+
+services.service.01.heading: "Konstrukční návrh, výroba, sestavení. Spolupráce při uvedení do provozu."
+services.service.02.heading: "Řezání laserem, vysekávání, ohýbání plechů"

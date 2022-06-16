@@ -44,3 +44,6 @@ surface-finishing.galvanizing: "Galvanisation"
 surface-finishing.bluing: "Bleuissage"
 surface-finishing.laser-description: "Descriptif laser"
 surface-finishing.nitrieren-hardening: "Nitriding trempe"
+
+services.service.01.heading: "Conception structurelle, production, montage. Coopération dans la mise en service."
+services.service.02.heading: "Découpe au laser, poinçonnage, pliage de la tôle"

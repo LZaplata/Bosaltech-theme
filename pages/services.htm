@@ -18,4 +18,41 @@ localeMeta_title[cs] = "Služby"
 localeMeta_description[de] = "Dienstleistungen"
 localeMeta_description[fr] = "Prestations de service"
 localeMeta_description[cs] = "Služby"
+
+[Gallery gallery]
 ==
+<div class="container-fluid py-3 py-xl-5 mt-xl-5" id="services">
+    <div class="container-lg">
+        <h2 class="mb-4 mb-xl-5 fs-32 ff-argentum-light">
+            {{ this.page.title }}
+        </h2>
+
+        <div class="pt-xl-5 mt-xl-5">
+            <div>
+                <h3 class="mb-4 fs-32">
+                    {{ 'services.service.01.heading'|_ }}
+                </h3>
+
+                {% content "services/01" %}
+
+                <div class="mt-5">
+                    {% component "gallery" gallery="structural-design" %}
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-5 pt-xl-4 mb-xl-5">
+            <div>
+                <h3 class="mb-4 fs-32">
+                    {{ 'services.service.02.heading'|_ }}
+                </h3>
+
+                {% content "services/02" %}
+
+                <div class="mt-5">
+{#                    {% component "gallery" gallery="laser-cutting" %}#}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
