@@ -12,6 +12,8 @@ code = "main-menu"
 [staticPage]
 useContent = 1
 default = 1
+
+[cookiesBar cookiesbar]
 ==
 <!DOCTYPE html>
 <html class="h-100" lang="en">
@@ -48,6 +50,8 @@ default = 1
 
         {% partial "footer" %}
         {% partial "offcanvas" %}
+        
+        {% component "cookiesbar" %}
 
         <script src="{{ [
             'assets/js/jquery.min.js',
