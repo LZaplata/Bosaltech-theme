@@ -24,9 +24,13 @@ items:
             isExternal: '0'
     -
         title: 'Surface finishing'
+        nesting: null
         type: cms-page
+        url: null
         code: ''
         reference: surface-finishing
+        cmsPage: null
+        replace: null
         viewBag:
             locale:
                 de:
@@ -83,6 +87,25 @@ items:
                     url: ''
                 cs:
                     title: 'Výrobky + reference'
+                    url: ''
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'We support'
+        type: cms-page
+        code: ''
+        reference: we-support
+        viewBag:
+            locale:
+                de:
+                    title: 'Wir unterstützen'
+                    url: ''
+                fr:
+                    title: 'Nous soutenons'
+                    url: ''
+                cs:
+                    title: Podporujeme
                     url: ''
             isHidden: '0'
             cssClass: ''

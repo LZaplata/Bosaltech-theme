@@ -267,3 +267,28 @@ footer
 #cookies-bar
     @include media-breakpoint-only(xs)
         left: 20px
+
+#we-support
+    figure
+        a
+            img
+                transition: $transition-base
+
+            &:hover
+                img
+                    opacity: .5
+
+    ul
+        li
+            &:not(:first-child)
+                &:before
+                    content: ""
+                    position: absolute
+                    top: 0
+                    left: 0
+                    width: 280px
+                    height: 2px
+                    background: transparentize($primary, .8)
+
+                    @include media-breakpoint-down(sm)
+                        width: 100%
