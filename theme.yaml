@@ -12,6 +12,7 @@ require:
     - janvince.smallgdpr
     - lzaplata.extensions
     - lzaplata.gallery
+    - initbiz.seostorm
 translate:
     en: config/lang-en.yaml
     cs: config/lang-cs.yaml
