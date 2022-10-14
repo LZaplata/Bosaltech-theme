@@ -8,6 +8,7 @@ parent: ''
 database: '0'
 require:
     - rainlab.pages
+    - rainlab.translate
     - janvince.smallcontactform
     - janvince.smallgdpr
     - lzaplata.extensions
