@@ -11,7 +11,7 @@ items:
         viewBag:
             locale:
                 de:
-                    title: Herstellung
+                    title: Maschinenausrüstung
                     url: ''
                 fr:
                     title: Fabrication
