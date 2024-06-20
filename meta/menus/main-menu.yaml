@@ -9,19 +9,16 @@ items:
         cmsPage: null
         replace: null
         viewBag:
-            locale:
-                de:
-                    title: Maschinenausrüstung
-                    url: ''
-                fr:
-                    title: Fabrication
-                    url: ''
-                cs:
-                    title: Výroba
-                    url: ''
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
+            locale:
+                de:
+                    title: Maschinenausrüstung
+                fr:
+                    title: Fabrication
+                cs:
+                    title: Výroba
     -
         title: 'Surface finishing'
         nesting: null
@@ -32,19 +29,16 @@ items:
         cmsPage: null
         replace: null
         viewBag:
-            locale:
-                de:
-                    title: OBERFLÄCHENBEARBEITUNG
-                    url: ''
-                fr:
-                    title: 'FINITION DE SURFACE'
-                    url: ''
-                cs:
-                    title: 'Povrchové úpravy'
-                    url: ''
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
+            locale:
+                de:
+                    title: OBERFLÄCHENBEARBEITUNG
+                fr:
+                    title: 'FINITION DE SURFACE'
+                cs:
+                    title: 'Povrchové úpravy'
     -
         title: Services
         nesting: null
@@ -55,19 +49,16 @@ items:
         cmsPage: null
         replace: null
         viewBag:
-            locale:
-                de:
-                    title: Dienstleistungen
-                    url: ''
-                fr:
-                    title: 'Prestations de service '
-                    url: ''
-                cs:
-                    title: Služby
-                    url: ''
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
+            locale:
+                de:
+                    title: Dienstleistungen
+                fr:
+                    title: 'Prestations de service '
+                cs:
+                    title: Služby
     -
         title: 'Products + references'
         nesting: null
@@ -78,38 +69,35 @@ items:
         cmsPage: null
         replace: null
         viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
             locale:
                 de:
                     title: 'Produkte + Referenzen'
-                    url: ''
                 fr:
                     title: 'des produits + référence'
-                    url: ''
                 cs:
                     title: 'Výrobky + reference'
-                    url: ''
-            isHidden: '0'
-            cssClass: ''
-            isExternal: '0'
     -
         title: 'We support'
         type: cms-page
+        url: null
         code: ''
         reference: we-support
+        cmsPage: null
+        replace: null
         viewBag:
-            locale:
-                de:
-                    title: 'Wir unterstützen'
-                    url: ''
-                fr:
-                    title: 'Nous soutenons'
-                    url: ''
-                cs:
-                    title: Podporujeme
-                    url: ''
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
+            locale:
+                de:
+                    title: 'Wir unterstützen'
+                fr:
+                    title: 'Nous soutenons'
+                cs:
+                    title: Podporujeme
     -
         title: Contacts
         nesting: null
@@ -120,17 +108,14 @@ items:
         cmsPage: null
         replace: null
         viewBag:
-            locale:
-                de:
-                    title: Kontakte
-                    url: ''
-                fr:
-                    title: Contacts
-                    url: ''
-                cs:
-                    title: Kontakty
-                    url: ''
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
+            locale:
+                de:
+                    title: Kontakte
+                fr:
+                    title: Contacts
+                cs:
+                    title: Kontakty
 name: 'Main menu'

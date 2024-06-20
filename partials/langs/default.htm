@@ -1,9 +1,9 @@
 <ul class="nav flex-column">
-    {% for code, name in locales %}
-        {% if code != activeLocale %}
+    {% for site in sitepicker.sites %}
+        {% if site.code != this.site.code %}
             <li class="nav-item">
-                <a href="" data-request="onSwitchLocale" data-request-data="locale: '{{ code }}'" class="nav-link text-uppercase py-1">
-                    {{ name }}
+                <a href="{{ site.url }}" class="nav-link text-uppercase py-1">
+                    {{ site.name }}
                 </a>
             </li>
         {% endif %}

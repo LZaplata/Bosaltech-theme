@@ -12,11 +12,11 @@
             <ul class="nav nav-pills langs">
                 <li class="nav-item position-relative">
                     <span class="nav-link text-uppercase text-primary pe-0">
-                        {{ activeLocaleName }} <i class="bi bi-caret-down-fill"></i>
+                        {{ this.site.name }} <i class="bi bi-caret-down-fill"></i>
                     </span>
 
                     <div class="position-absolute overflow-hidden py-1">
-                        {% component "langs" %}
+                        {% partial "langs/default" %}
                     </div>
                 </li>
             </ul>
