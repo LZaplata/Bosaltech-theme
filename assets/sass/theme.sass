@@ -46,6 +46,12 @@ header
                 width: 30px
                 transition: $transition-base
 
+    &-primary
+        color: $white
+
+        &:hover
+            color: $white
+
 .btn-outline-secondary
     @include button-variant(transparent, $secondary, $white, $secondary, $secondary, $white, transparent, $secondary, $white)
 
@@ -292,3 +298,7 @@ footer
 
                     @include media-breakpoint-down(sm)
                         width: 100%
+
+#contactform
+    &-gdpr
+        color: $white
