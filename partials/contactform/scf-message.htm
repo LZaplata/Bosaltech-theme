@@ -7,9 +7,9 @@
 
 		{% flash success %}
 
-            <p class="mb-0 text-white">
+            <div class="alert alert-success mb-0" role="alert">
                 {{ html_entity_decode(message)|nl2br }}
-            </p>
+            </div>
 
 		{% endflash %}
 
