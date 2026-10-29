@@ -9,6 +9,8 @@ default = 1
 
 [cookiesBar cookiesbar]
 
+[cookiesConfig cookiesconfig]
+
 [seo]
 
 [sitePicker sitepicker]
@@ -20,9 +22,13 @@ default = 1
         <meta name="format-detection" content="telephone=no">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+        {% component "cookiesconfig" %}
+
         {% component "seo" %}
 
         {% styles %}
+
+        <link rel="stylesheet" href="{{ "assets/css/cookiesbar.css"|theme }}" />
 
         <link rel="stylesheet" href="{{ [
             'assets/css/theme.css',

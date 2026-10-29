@@ -4,7 +4,10 @@ let minify = require("gulp-clean-css");
 let themeDir = "./themes/lzaplata-bosaltech";
 
 function sassTask() {
-    return src(themeDir + "/assets/sass/theme.sass")
+    return src([
+        themeDir + "/assets/sass/theme.sass",
+        themeDir + "/assets/sass/cookiesbar.sass",
+    ])
         .pipe(sass({outputStyle: "compressed", includePaths: ["./node_modules"]}))
         .pipe(dest(themeDir + "/assets/css"));
 }
@@ -37,6 +40,8 @@ function watchTask() {
     watch([
         themeDir + "/assets/**/theme.sass",
         themeDir + "/assets/**/_variables.sass",
+        themeDir + "/assets/**/cookiesbar.sass",
+        themeDir + "/assets/**/_cookies-bar.sass",
     ], {ignoreInitial: false}, sassTask);
 }
 

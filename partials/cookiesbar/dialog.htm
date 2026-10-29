@@ -1,0 +1,61 @@
+<div class="modal fade" id="sg-settings-modal-{{ __SELF__ }}" tabindex="-1" role="dialog" aria-labelledby="sg-settings-modal-{{ __SELF__ }}">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content" data-sg-list-wrap{% if sgBarReload %} data-sg-reload="1"{% endif %}>
+            <div class="modal-header">
+                <p class="h3 mb-0">
+                    {{ cookiesSettingsGet("cookies_manage_title") }}
+                </p>
+
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                {% if cookiesSettingsGet("cookies_manage_content") %}
+                    <div class="content">
+                        {{ cookiesSettingsGet("cookies_manage_content")|raw }}
+                    </div>
+                {% endif %}
+
+                {% if cookiesSettingsGet("cookies")|length %}
+                    <form class="list-cookies">
+                        {% for cookie in cookiesSettingsGet("cookies") %}
+                            {% set is_checked = (sgCookies[cookie.slug] is defined and sgCookies[cookie.slug]) or cookie.required or cookie.default_modal_checked %}
+
+                            <div class="form-check">
+                                <input class="form-check-input {{ cookie.required ? "disabled" }}" type="checkbox" id="sg-cookies-{{ cookie.slug }}-modal" data-sg-cookie="{{ cookie.slug }}" {{ is_checked ? "checked" }} {{ cookie.required ? "disabled" }}>
+
+                                <label class="form-check-label" for="sg-cookies-{{ cookie.slug }}-modal">
+                                    {{ cookie.title }}
+                                </label>
+                            </div>
+
+                            {% if cookie.description %}
+                                <div class="description help-block">
+                                    {{ cookie.description|raw }}
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </form>
+                {% endif %}
+            </div>
+
+            <div class="modal-footer">
+                <div class="w-100 w-lg-75">
+                    <div class="row row-cols-1 g-3 row-cols-lg-2">
+                        <div class="col">
+                            <button type="button" class="btn btn-outline-secondary text-secondary text-white-hover w-100" data-bs-dismiss="modal">
+                                {{ "janvince.smallgdpr::lang.settings.form_fields.cancel"|_ }}
+                            </button>
+                        </div>
+
+                        <div class="col">
+                            <button type="button" class="btn btn-outline-secondary text-secondary text-white-hover w-100" data-bs-dismiss="modal" data-sg-action="save">
+                                {{ "janvince.smallgdpr::lang.settings.form_fields.save_settings"|_ }}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
