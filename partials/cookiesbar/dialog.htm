@@ -43,14 +43,14 @@
                 <div class="w-100 w-lg-75">
                     <div class="row row-cols-1 g-3 row-cols-lg-2">
                         <div class="col">
-                            <button type="button" class="btn btn-outline-secondary text-secondary text-white-hover w-100" data-bs-dismiss="modal">
-                                {{ "janvince.smallgdpr::lang.settings.form_fields.cancel"|_ }}
+                            <button type="button" class="btn btn-outline-secondary text-secondary text-white-hover w-100" data-bs-dismiss="modal" data-sg-action="accept">
+                                {{ cookiesSettingsGet("btn_accept_label", "Accept") }}
                             </button>
                         </div>
 
                         <div class="col">
                             <button type="button" class="btn btn-outline-secondary text-secondary text-white-hover w-100" data-bs-dismiss="modal" data-sg-action="save">
-                                {{ "janvince.smallgdpr::lang.settings.form_fields.save_settings"|_ }}
+                                {{ cookiesSettingsGet("btn_save_label", "Save selection") }}
                             </button>
                         </div>
                     </div>
